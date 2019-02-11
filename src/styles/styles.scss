@@ -1,0 +1,38 @@
+@import 'variables';
+
+html {
+    font-size: 62.5%;
+    height: 100%;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: $m-size;
+    background: $logo-color;
+    height: 100%;
+}
+
+#app{
+    height: 100%;
+}
+
+.header{
+    width: 100%;
+    margin-bottom: $l-size;
+    background-color: $header-color;
+    box-shadow: 10px 10px 5px #808080;
+}
+
+.header .container {
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: $l-size $m-size;
+}
+
+.header__title{
+    font-size: $xl-size;
+    text-align: center;
+    color : $logo-color;
+    font-family : $header-font;
+    text-shadow: 2px 2px 4px #999999;
+}
