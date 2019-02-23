@@ -29,10 +29,61 @@ body {
     padding: $l-size $m-size;
 }
 
+.weather-info-wrapper{
+    height: 40rem;
+    max-width: 70rem;
+    margin: 0 auto;
+}
+
+.weather-info__temperature{
+    font-size: 15rem;
+    color: #ebebeb;
+    font-family: $number-font;
+    text-align: center;
+    height: 150px;
+    padding-top: 80px;
+    margin-bottom: 10rem;
+}
+
+.weather-info__description{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color : $off-white;
+    font-family : $header-font;
+    letter-spacing: 1px;
+
+}
+
+.weather_sideblock {
+  margin-top: 30px;
+}
+
+.weather_block {
+  margin-top: 150px;
+}
+
+.error-message{
+    text-align: center;
+    font-size: $l-size;
+    font-family: $header-font;
+    color: $off-white;
+}
+
 .header__title{
     font-size: $xl-size;
     text-align: center;
     color : $logo-color;
     font-family : $header-font;
     text-shadow: 2px 2px 4px #999999;
+}
+
+.searchForm {
+    position: absolute;
+    width: 50%;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 25px;
+    float: center;
+    left: 25%;
 }
