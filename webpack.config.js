@@ -3,7 +3,7 @@ const HtmlWebPackPlugin = require("html-webpack-plugin");
 module.exports = {
   entry : ['babel-polyfill', './src/app.js'],
     output : {
-        path : path.resolve(__dirname, 'public'),//this is the abs path on machine you want o/p of that webpack
+        path : path.join(__dirname, 'public'),//this is the abs path on machine you want o/p of that webpack
         publicPath: '/',
         filename : 'bundle.js'
     },
@@ -43,7 +43,7 @@ module.exports = {
   },
     plugins: [
     new HtmlWebPackPlugin({
-      template: "./public/index.html",
+      template: path.join(__dirname,"./public/index.html"),
       filename: "./index.html"
     })
   ]
