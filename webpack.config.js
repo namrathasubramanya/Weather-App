@@ -3,8 +3,12 @@ const HtmlWebPackPlugin = require("html-webpack-plugin");
 module.exports = {
   entry : ['babel-polyfill', './src/app.js'],
     output : {
-        path : '/', //this is the abs path on machine you want o/p of that webpack
+        path : path.resolve(__dirname, 'public'),//this is the abs path on machine you want o/p of that webpack
+        publicPath: '/',
         filename : 'bundle.js'
+    },
+    devServer: {
+        contentBase: "./build",
     },
     performance: {
         hints: false
