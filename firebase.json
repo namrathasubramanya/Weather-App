@@ -1,0 +1,16 @@
+{
+  "hosting": {
+    "public": "weather",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "/src/index.html  ",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
